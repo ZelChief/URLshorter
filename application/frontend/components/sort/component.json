@@ -1,0 +1,15 @@
+{
+    "name": "sort",
+    "version": "1.0.0",
+    "dependencies": {
+        "dropdown": "*"
+    },
+    "templates": {
+        "ajax": "sort.ajax.tpl",
+        "timespan": "sort.timespan.tpl",
+        "sort": "sort.tpl"
+    },
+    "styles": {
+        "sort": "css/sort.css"
+    }
+}

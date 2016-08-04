@@ -1,0 +1,50 @@
+/**
+ * Стена
+ *
+ * @template actions/ActionProfile/wall.*.tpl
+ * @scripts <frontend>/common/js/wall.js
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+
+/**
+ * Форма добавления сообщения на стену
+ */
+.wall-form          { margin-bottom: 2px; padding: 15px; background: #fafafa; }
+.wall-form .field   { margin-bottom: 0; }
+.wall-form textarea { height: 30px; min-height: 30px; max-height: 30px; resize: none; }
+
+.wall-form-footer { display: none; }
+
+/* Open */
+.wall-form.open .field            { margin-bottom: 15px; }
+.wall-form.open textarea          { height: 90px; max-height: 300px; resize: vertical; }
+.wall-form.open .wall-form-footer { display: block; }
+
+
+/**
+ * Сообщения
+ */
+.comment.comment--self.wall-comment { background: #fafafa; }
+
+.wall-comments { padding-left: 70px; }
+
+
+/**
+ * Кнопка подгрузки комментариев
+ */
+.more.wall-more-comments {
+    border: none;
+    margin: 0 0 2px;
+    background-color: #f7f7f7;
+    color: #777;
+}
+.more.wall-more-comments:hover {
+    background-color: #eee;
+}
+.more.wall-more-comments.more--locked {
+    background-color: #f7f7f7;
+}

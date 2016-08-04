@@ -1,0 +1,92 @@
+/**
+ * Группировка кнопок
+ * Стили частично позаимствованы у бутстрапа
+ *
+ * @module ls/button/group
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.button-group {
+    display: inline-block;
+}
+
+.button-group > .dropdown,
+.button-group > .button {
+    position: relative;
+}
+
+/* Переносим кнопки вперед, */
+/* чтобы бордеры нормально отображались при ховере и фокусе */
+.button-group .button:hover,
+.button-group .button:focus {
+    z-index: 2;
+}
+
+/* Убираем закругления у кнопок посередине */
+.button-group > .dropdown:not(:last-child):not(:first-child) > .button,
+.button-group > .button:not(:last-child):not(:first-child) {
+    border-radius: 0;
+}
+
+
+/**
+ * @modifier horizontal Горизонтальная группировка
+ */
+.button-group--horizontal > .dropdown,
+.button-group--horizontal > .button {
+    float: left;
+}
+
+/* Убираем двойные бордеры */
+.button-group--horizontal > * + * {
+    margin-left: -1px;
+}
+.button-group--horizontal > *:first-child {
+    margin-left: 0;
+}
+
+/* Убираем закругления у кнопок по краям */
+.button-group--horizontal > .dropdown:first-child:not(:last-child) > .button,
+.button-group--horizontal > .button:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.button-group--horizontal > .dropdown:last-child:not(:first-child) > .button,
+.button-group--horizontal > .button:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+/**
+ * @modifier vertical Вертикальная группировка
+ */
+.button-group--vertical > .dropdown,
+.button-group--vertical > .button {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Убираем двойные бордеры */
+.button-group--vertical > * + * {
+    margin-top: -1px;
+}
+.button-group--vertical > *:first-child {
+    margin-top: 0;
+}
+
+/* Убираем закругления у кнопок по краям */
+.button-group--vertical > .dropdown:first-child:not(:last-child) > .button,
+.button-group--vertical > .button:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.button-group--vertical > .dropdown:last-child:not(:first-child) > .button,
+.button-group--vertical > .button:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

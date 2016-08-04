@@ -1,0 +1,143 @@
+/**
+ * Блок
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.block {
+    background: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+.block:last-child {
+    margin-bottom: 0;
+}
+.block .text {
+    font-size: 13px;
+    line-height: 18px;
+}
+.block .max-height-200 {
+    overflow: auto;
+    max-height: 200px;
+    position: relative;
+}
+
+/* Шапка */
+.block-header {
+    padding: 15px 15px;
+    position: relative;
+    background: #fafafa;
+    border-radius: 3px 3px 0 0;
+}
+.block-header .block-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+/* Навигация */
+.block .tab-list {
+    padding: 15px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Контент */
+.block-content {
+    padding: 20px;
+}
+
+/* Подвал */
+.block-footer {
+    border-top: 1px solid #eee;
+    padding: 15px 20px;
+    font-size: 12px;
+}
+.block-footer .search-form {
+    padding: 0;
+    margin: 5px 0;
+}
+
+/**
+ * Поддержка списков
+ */
+.block .item-group {
+    border: none;
+}
+.block .block-content + .item-group {
+    border-top: 1px solid #eee;
+}
+
+/**
+ * @modifier nopadding Блок без отступов у контента
+ */
+.block--nopadding .block-content {
+    padding: 0;
+}
+
+/**
+ * @modifier transparent Блок без фона
+ */
+.block--transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/**
+ * @modifier primary
+ */
+.block--primary {
+    border-color: #2e6da4;
+}
+.block--primary .block-header {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+/**
+ * @modifier success
+ */
+.block--success {
+    border-color: #4cae4c;
+}
+.block--success .block-header {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+/**
+ * @modifier info
+ */
+.block--info {
+    border-color: #46b8da;
+}
+.block--info .block-header {
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+/**
+ * @modifier warning
+ */
+.block--warning {
+    border-color: #eea236;
+}
+.block--warning .block-header {
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+/**
+ * @modifier danger
+ */
+.block--danger {
+    border-color: #d43f3a;
+}
+.block--danger .block-header {
+    color: #fff;
+    background-color: #d9534f;
+}

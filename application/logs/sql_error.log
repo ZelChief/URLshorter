@@ -1,0 +1,166 @@
+[2016-07-31 19:01:18] db_error.CRITICAL 744 da577a5: SQL Error: Table 'social.blog' doesn't exist at D:\xampp\htdocs\ls_alfa\application\classes\modules\topic\mapper\Topic.mapper.class.php line 286<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.blog' doesn't exist
+    [query] => SELECT
+					count(t.topic_id) as count									
+				FROM 
+					topic as t,
+					blog as b
+				WHERE 
+					1=1
+					
+					 AND t.topic_publish =  0 AND t.topic_date_publish <= '2016-07-31 19:01:18'  AND t.user_id =  1
+					
+					AND
+					t.blog_id=b.blog_id;
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\topic\mapper\Topic.mapper.class.php line 286
+)
+ []
+[2016-07-31 19:03:10] db_error.CRITICAL 744 a410f8e: SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target' at line 5 at D:\xampp\htdocs\ls_alfa\application\classes\modules\geo\mapper\Geo.mapper.class.php line 87<br>
+Array
+(
+    [code] => 1064
+    [message] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target' at line 5
+    [query] => SELECT SQL_CALC_FOUND_ROWS
+					*
+				FROM
+					
+				WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target_id IN ( '1' )  
+					
+					
+					
+				ORDER BY target_id DESC
+				LIMIT 0, 1 ;
+					
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\geo\mapper\Geo.mapper.class.php line 87
+)
+ []
+[2016-07-31 19:03:11] db_error.CRITICAL 744 858891a: SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target' at line 5 at D:\xampp\htdocs\ls_alfa\application\classes\modules\geo\mapper\Geo.mapper.class.php line 87<br>
+Array
+(
+    [code] => 1064
+    [message] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target' at line 5
+    [query] => SELECT SQL_CALC_FOUND_ROWS
+					*
+				FROM
+					
+				WHERE
+					1 = 1
+					
+					
+					  AND target_type = 'user'  
+					  AND target_id IN ( '1' )  
+					
+					
+					
+				ORDER BY target_id DESC
+				LIMIT 0, 1 ;
+					
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\geo\mapper\Geo.mapper.class.php line 87
+)
+ []
+[2016-07-31 19:03:29] db_error.CRITICAL 744 9a1bebb: SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4 at D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286<br>
+Array
+(
+    [code] => 1064
+    [message] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4
+    [query] => 
+					SELECT
+						SUM(tu.comment_count_new) as count_new												
+					FROM   						
+  						 as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_user_active=1							
+		
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286
+)
+ []
+[2016-07-31 19:03:30] db_error.CRITICAL 744 8ad4cff: SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4 at D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286<br>
+Array
+(
+    [code] => 1064
+    [message] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4
+    [query] => 
+					SELECT
+						SUM(tu.comment_count_new) as count_new												
+					FROM   						
+  						 as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_user_active=1							
+		
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286
+)
+ []
+[2016-07-31 19:03:55] db_error.CRITICAL 744 b5cbe96: SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4 at D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286<br>
+Array
+(
+    [code] => 1064
+    [message] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_u' at line 4
+    [query] => 
+					SELECT
+						SUM(tu.comment_count_new) as count_new												
+					FROM   						
+  						 as tu
+					WHERE   						
+  						tu.user_id = 1  
+  						AND
+  						tu.talk_user_active=1							
+		
+    [context] => D:\xampp\htdocs\ls_alfa\application\classes\modules\talk\mapper\Talk.mapper.class.php line 286
+)
+ []

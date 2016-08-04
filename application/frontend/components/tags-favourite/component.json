@@ -1,0 +1,20 @@
+{
+    "name": "tags-favourite",
+    "version": "1.0.0",
+    "dependencies": {
+        "ls-component": "*",
+        "tag": "*",
+        "modal": "*"
+    },
+    "templates": {
+        "modal": "modal.favourite_tags.tpl",
+        "cloud": "tags-cloud.tpl",
+        "tags-favourite": "tags.tpl"
+    },
+    "scripts": {
+        "tags-favourite": "js/tags-favourite.js"
+    },
+    "styles": {
+        "tags-favourite": "css/tags-favourite.css"
+    }
+}
