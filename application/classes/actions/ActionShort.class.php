@@ -60,7 +60,7 @@ class ActionShort extends Action {
 			if($code != "errorcodeBadLink") {
 				$this->Viewer_Assign('iHrefShort', $code);
 			} else {
-				$this->Viewer_Assign('iHrefShort', "bad_link");
+				$this->Viewer_Assign('iHrefShort', "Неправильная ссылка");
 			}
 		}
 

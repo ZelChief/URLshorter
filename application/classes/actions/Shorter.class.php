@@ -49,7 +49,11 @@ class Shorter {
 
 	private function ValidLink($thelink){
 		$valid = false;
+		if(preg_match('/^(http:\/\/|https:\/\/)?[0-9a-zA-Zà-ÿÀ-ß¸¨]{1,3}+[.][0-9a-zA-Zà-ÿÀ-ß¸¨]+[.][0-9a-zA-Zà-ÿÀ-ß¸¨]{2,6}+$/',$thelink)){
+			$valid = true;
+		}
 		return $valid;
+
 	}
 
 
@@ -59,7 +63,7 @@ class Shorter {
 			$code = "";
 			$thelink = $this->ValidProtocolForLink($thelink);
 			$domen = $this->GetDomen($thelink);
-			if (filter_var($thelink, FILTER_VALIDATE_URL)) {
+			if (filter_var($thelink, FILTER_VALIDATE_URL) and $this->ValidLink($thelink)) {
 
 				$link = mysqli_connect(Config::Get('db.params.host'), Config::Get('db.params.user'), Config::Get('db.params.pass'), Config::Get('db.params.dbname'));
 
