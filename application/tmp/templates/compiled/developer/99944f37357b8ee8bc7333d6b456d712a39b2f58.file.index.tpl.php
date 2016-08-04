@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2016-08-02 11:16:04
+<?php /* Smarty version Smarty-3.1.13, created on 2016-08-04 14:22:40
          compiled from "D:\xampp\htdocs\ls_alfa\application\frontend\skin\developer\actions\ActionError\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2947557a056c4d009e0-55881369%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bd37bbf6970b2038e4a167943eeecbef580616cf' => 
     array (
       0 => 'D:\\xampp\\htdocs\\ls_alfa\\application\\frontend\\skin\\developer\\layouts\\layout.base.tpl',
-      1 => 1469793545,
+      1 => 1470309759,
       2 => 'file',
     ),
     '988fa62d277ea3e1e7b719492735f5d1445124d2' => 
@@ -33,6 +33,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_57a056c4e775b6_74349478',
   'variables' => 
   array (
     'lang' => 0,
@@ -55,8 +57,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'sLayoutAfter' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_57a056c4e775b6_74349478',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57a056c4e775b6_74349478')) {function content_57a056c4e775b6_74349478($_smarty_tpl) {?><?php if (!is_callable('smarty_function_router')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.router.php';
 if (!is_callable('smarty_function_json')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.json.php';
@@ -128,6 +128,7 @@ if (!is_callable('smarty_function_add_block')) include 'D:\\xampp\\htdocs\\ls_al
 
         
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="shorter_form.css">
 
 
         <link href="<?php echo Config::Get('path.skin.assets.web');?>
@@ -350,7 +351,7 @@ $_smarty_tpl->tpl_vars['sPath']->_loop = true;
     <?php ob_start();?><?php /*  Call merged included template "blocks.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('blocks.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('group'=>'toolbar'), 0, '2947557a056c4d009e0-55881369');
-content_57a056c4e4fcf9_92924810($_smarty_tpl);
+content_57a32580e97c67_85569504($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "blocks.tpl" */?><?php $_tmp2=ob_get_clean();?><?php echo smarty_function_component(array('_default_short'=>'toolbar','classes'=>'js-toolbar-default','items'=>$_tmp2),$_smarty_tpl);?>
 
 
@@ -361,9 +362,9 @@ $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "blocks.tpl"
     <?php echo $_smarty_tpl->tpl_vars['sLayoutAfter']->value;?>
 
 </body>
-</html><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2016-08-02 11:16:04
+</html><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2016-08-04 14:22:40
          compiled from "D:\xampp\htdocs\ls_alfa\application\frontend\skin\developer\blocks.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_57a056c4e4fcf9_92924810')) {function content_57a056c4e4fcf9_92924810($_smarty_tpl) {?><?php if (!is_callable('smarty_function_get_blocks')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.get_blocks.php';
+<?php if ($_valid && !is_callable('content_57a32580e97c67_85569504')) {function content_57a32580e97c67_85569504($_smarty_tpl) {?><?php if (!is_callable('smarty_function_get_blocks')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.get_blocks.php';
 if (!is_callable('smarty_insert_block')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\insert.block.php';
 ?>
 

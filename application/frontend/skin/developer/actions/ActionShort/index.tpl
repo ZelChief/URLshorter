@@ -14,10 +14,9 @@
 {block 'layout_content'}
     <div class="content-shorter">
         <form action="" method="post">
-            <input type="text" name="link_short">
-            <input type="submit" name="submit_short" value="GET LINK!">
+            <input class="text1" type="text" name="link_short">
+            <input class="b1" type="submit" name="submit_short" value="Получить ссылку">
         </form>
-        Href: {$iHrefShort}
-        <a href={$iHrefShort}></a>
+        <input class="text-short" type="text" readonly value="{$iHrefShort}" onclick="this.select()">
     </div>
 {/block}

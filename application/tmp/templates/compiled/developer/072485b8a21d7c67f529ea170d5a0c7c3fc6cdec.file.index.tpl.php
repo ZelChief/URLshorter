@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2016-08-02 11:16:10
+<?php /* Smarty version Smarty-3.1.13, created on 2016-08-04 14:31:32
          compiled from "D:\xampp\htdocs\ls_alfa\application\frontend\skin\developer\actions\ActionShort\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:492057a056ca1b9bf0-87596823%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '072485b8a21d7c67f529ea170d5a0c7c3fc6cdec' => 
     array (
       0 => 'D:\\xampp\\htdocs\\ls_alfa\\application\\frontend\\skin\\developer\\actions\\ActionShort\\index.tpl',
-      1 => 1469794336,
+      1 => 1470310290,
       2 => 'file',
     ),
     'bd37bbf6970b2038e4a167943eeecbef580616cf' => 
     array (
       0 => 'D:\\xampp\\htdocs\\ls_alfa\\application\\frontend\\skin\\developer\\layouts\\layout.base.tpl',
-      1 => 1469793545,
+      1 => 1470310207,
       2 => 'file',
     ),
     '988fa62d277ea3e1e7b719492735f5d1445124d2' => 
@@ -33,6 +33,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_57a056ca319ce5_93608407',
   'variables' => 
   array (
     'lang' => 0,
@@ -55,8 +57,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'sLayoutAfter' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_57a056ca319ce5_93608407',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57a056ca319ce5_93608407')) {function content_57a056ca319ce5_93608407($_smarty_tpl) {?><?php if (!is_callable('smarty_function_router')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.router.php';
 if (!is_callable('smarty_function_json')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.json.php';
@@ -179,7 +179,22 @@ $_smarty_tpl->tpl_vars['sPath']->_loop = true;
         ls.registry.set(<?php echo smarty_function_json(array('var'=>$_smarty_tpl->tpl_vars['aVarsJs']->value),$_smarty_tpl);?>
 );
     </script>
-
+    <style>
+        .b1{
+            background: #2E9AFE; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+            padding: 10px; /* Поля вокруг текста */
+            border-radius: 5px; /* Уголки */
+        }
+        .text1{
+            width: 60%; /* Ширина блока */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .text-short{
+            width: 20%;
+        }
+    </style>
     
     <?php ob_start();?><?php echo Config::Get('view.grid.type');?>
 <?php $_tmp1=ob_get_clean();?><?php if ($_tmp1=='fluid'){?>
@@ -283,13 +298,11 @@ $_smarty_tpl->tpl_vars['sPath']->_loop = true;
                 
     <div class="content-shorter">
         <form action="" method="post">
-            <input type="text" name="link_short">
-            <input type="submit" name="submit_short" value="GET LINK!">
+            <input class="text1" type="text" name="link_short">
+            <input class="b1" type="submit" name="submit_short" value="Получить ссылку">
         </form>
-        Href: <?php echo $_smarty_tpl->tpl_vars['iHrefShort']->value;?>
-
-        <a href=<?php echo $_smarty_tpl->tpl_vars['iHrefShort']->value;?>
-></a>
+        <input class="text-short" type="text" readonly value="<?php echo $_smarty_tpl->tpl_vars['iHrefShort']->value;?>
+" onclick="this.select()">
     </div>
 
 
@@ -341,7 +354,7 @@ $_smarty_tpl->tpl_vars['sPath']->_loop = true;
     <?php ob_start();?><?php /*  Call merged included template "blocks.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('blocks.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('group'=>'toolbar'), 0, '492057a056ca1b9bf0-87596823');
-content_57a056ca2f31d1_67632354($_smarty_tpl);
+content_57a3279457e0e4_34491431($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "blocks.tpl" */?><?php $_tmp2=ob_get_clean();?><?php echo smarty_function_component(array('_default_short'=>'toolbar','classes'=>'js-toolbar-default','items'=>$_tmp2),$_smarty_tpl);?>
 
 
@@ -352,9 +365,9 @@ $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "blocks.tpl"
     <?php echo $_smarty_tpl->tpl_vars['sLayoutAfter']->value;?>
 
 </body>
-</html><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2016-08-02 11:16:10
+</html><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2016-08-04 14:31:32
          compiled from "D:\xampp\htdocs\ls_alfa\application\frontend\skin\developer\blocks.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_57a056ca2f31d1_67632354')) {function content_57a056ca2f31d1_67632354($_smarty_tpl) {?><?php if (!is_callable('smarty_function_get_blocks')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.get_blocks.php';
+<?php if ($_valid && !is_callable('content_57a3279457e0e4_34491431')) {function content_57a3279457e0e4_34491431($_smarty_tpl) {?><?php if (!is_callable('smarty_function_get_blocks')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\function.get_blocks.php';
 if (!is_callable('smarty_insert_block')) include 'D:\\xampp\\htdocs\\ls_alfa\\framework/classes/modules/viewer/plugs\\insert.block.php';
 ?>
 

@@ -17,7 +17,22 @@
         ls.lang.load({json var = $aLangJs});
         ls.registry.set({json var = $aVarsJs});
     </script>
-
+    <style>
+        .b1{
+            background: #2E9AFE; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+            padding: 10px; /* Поля вокруг текста */
+            border-radius: 5px; /* Уголки */
+        }
+        .text1{
+            width: 60%; /* Ширина блока */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .text-short{
+            width: 20%;
+        }
+    </style>
     {**
      * Тип сетки сайта
      *}
